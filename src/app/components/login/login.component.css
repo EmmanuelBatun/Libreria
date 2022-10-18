@@ -1,0 +1,18 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(195, 223, 230);
+    height: 100%;
+}
+.logo{
+     height: 150px;
+     margin-bottom: 12%;
+}
+.body{
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}

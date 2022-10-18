@@ -1,0 +1,29 @@
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4"></span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a routerLink="/dashboard"class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a routerLink="" class="nav-link">Features</a></li>
+        
+      </ul>
+      <div class=" col-md-3 text-end">
+        <button type="button" class="btn btn-warning" (click)="cerrarsesion()">Cerrar sesion</button>
+      </div>
+
+    </header>
+    
+  </div>
+  <div class=" justify-content-center container px-4 py-5" id="featured-3">
+    <h2  class="pb-2 border-bottom">Bibloteca</h2>
+    <div>
+    <ol *ngFor="let libro of libro">
+      <li>Titulo: {{libro.title}}</li>
+      <li> Precio: {{libro.price}}</li>
+      <li> Subtitulo: {{libro.subtitle}}</li>
+      <img src="{{libro.image}}" alt="">
+    </ol>
+  </div> 
