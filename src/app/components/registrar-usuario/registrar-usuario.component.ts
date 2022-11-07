@@ -50,9 +50,9 @@ export class RegistrarUsuarioComponent implements OnInit {
     this.loading = true;
     
 
-  this.afAuth.createUserWithEmailAndPassword(email,password).then((user)=> {
+  this.afAuth.createUserWithEmailAndPassword(email,password)
+  .then((user)=> {
     this.loading = true;
-    
     Swal.fire({
       position: 'top-end',
       icon: 'success',
